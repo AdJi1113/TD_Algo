@@ -4,10 +4,12 @@
 
 int main() {
     int n = 1000000;  // définir n manuellement ici
-
+    
     clock_t start, end;
     double time_naive, time_opti;
-
+    
+    printf("\nNumber of primes < %lld:\n", n);
+        
     // Méthode naïve
     start = clock();
     int result_naive = count_primes_naive(n);
